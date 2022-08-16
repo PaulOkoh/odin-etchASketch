@@ -1,27 +1,28 @@
+/*
+Functions/rqmts
+1.Create grid: rows and columns
+2.Clear grid
+3.modify grid counts
+4. change color on hover
+5. use random colors on hover
+ */
 
-    function genDivs(v){ 
-      var container = document.getElementById("container"); // whatever you want to append the rows to: 
-      for(var i = 0; i < v; i++){ 
-        var row = document.createElement("div"); 
-        row.className = "row"; 
-        for(var x = 1; x <= v; x++){ 
-            var cell = document.createElement("div"); 
-            cell.className = "gridsquare"; 
-            cell.innerText = (i * v) + x;
-            row.appendChild(cell); 
-        } 
-        container.appendChild(row); 
-      } 
-      // document.getElementById("code").innerText = e.innerHTML;
-
+function createGrids(x) {
+  for(let rows = 0; rows < x; rows++){
+    for(let columns = 0; columns < x; columns++){
+      const box = document.getElementById("box");
+      const div = document.createElement("div");
+      box.appendChild(div);
+      div.classList.add("grid");
+      div.setAttribute("style", `height: ${480/x}px; width: {480/x}px`);
     }
+  }
+}
 
-    let btn = document.getElementById("btn");
 
-    btn.addEventListener("click", genDivs(16));
 
-/* <body> 
-    <input type="button" onclick="genDivs(6)" value="click me"> 
-    <code id="code"></code>
-</body> 
-</html>  */
+
+
+
+
+   
