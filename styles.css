@@ -1,0 +1,9 @@
+#container {
+  display:flex;
+  height: 1200px;
+}
+.gridsquare {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+}
