@@ -3,15 +3,45 @@ body {
 }
 
 
-#container {
+.container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  text-align: auto;
+  text-align: center;
 }
+
+.reset {
+  height: 40px;
+  width: 80px;
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: #e67e22;
+  outline: none;
+  border: none;
+}
+
+#box {
+	position: relative;
+	top: 30px;
+	font-size: 0;
+	height: 480px;
+	width: 480px;
+	margin: auto;
+	padding: 0;
+	border: none;
+	outline: 2px solid yellow;
+}
+
+
+
+
+
 .grid {
   margin: 0;
   padding: 0;
   border: none;
-  outline: 1px solid rosybrown;
+  outline: 1px solid gold;
+  display: inline-block;
 }
+
+
