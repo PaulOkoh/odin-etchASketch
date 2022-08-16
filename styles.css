@@ -1,9 +1,17 @@
-#container {
-  display:flex;
-  height: 1200px;
+body {
+  background-color: #ade873;
 }
-.gridsquare {
-  height: 30px;
-  width: 30px;
-  border: 1px solid black;
+
+
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  text-align: auto;
+}
+.grid {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 1px solid rosybrown;
 }
