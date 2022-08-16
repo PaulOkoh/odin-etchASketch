@@ -19,6 +19,10 @@ function createGrids(x) {
   }
 }
 
+function clearGrid() {
+  document.querySelectorAll(".grid").forEach((div) => box.removeChild(div));
+}
+
 
 
 
