@@ -23,6 +23,14 @@ function clearGrid() {
   document.querySelectorAll(".grid").forEach((div) => box.removeChild(div));
 }
 
+function changeGridCount() {
+  clearGrid();
+  let columnCount = prompt("enter grid count");
+  createGrids(columnCount);
+  
+
+}
+
 
 
 
